@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+/* HOME PAGE */
+
+/* Body Starts */
+
+body{
+    background-color: #131316;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13pt;
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+    padding-left: 500px;
+    padding-right: 500px;
+    text-align: center;
+}
+
+.hiddenForSections {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+    padding-left: 100px;
+    padding-right: 500px;
+    text-align: left;
+}
+
+.hiddenForSections h1 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+  padding-left: 100px;
+  padding-right: 500px;
+  text-align: left;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.show h1{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+/* Body Ends */
+
+/* Header Starts */
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+a:hover {
+    color: rgb(179, 179, 179);
+    text-decoration: none;
+}
+.site-header {
+    padding: 0.5em 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.site-identity h1 {
+    font-size: 1.5em;
+    margin: 45px;
+    padding: 0;
+    display: inline-block;
+    margin-top: 50px;
+}
+.site-navigation ul,
+.site-navigation li {
+    margin-top: 30px;
+    padding: 0;
+}
+.site-navigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+}
+
+img {
+    width: 85px;
+    height: 85px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+/* Header Ends */
+
+/* Footer Starts */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ffffff;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.site-footer {
+    background-color: #131316;  
+    color: #ffffff;
+    padding: 25px 0;
+  }
+  
+  .site-footer .team-logo-light {
+    width: 345px;
+    height: 145px;
+    margin-bottom: 40px;
+  }
+  
+  .site-footer p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .site-footer .rights {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .site-footer h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: initial;
+  }
+
+  .col-md-4 h5 {
+    margin-top: 30px;
+  }
+  
+  .contact-list dt {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .nav-list li {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .member-container .col {
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .member-inner {
+    font-weight: 900;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: background-color 0.2s ease;
+  }
+  
+  .member-inner:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  @media (max-width: 767px) {
+    .site-footer .container {
+      text-align: center;
+    }
+    .site-footer .col-md-4 {
+      margin-top: 30px;
+    }
+    .site-footer .rights {
+      margin-top: 30px;
+    }
+  }
+
+  .quote ul {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .quote-person {
+    font-weight: bold;
+  }
+
+  .footnote {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: end;
+    margin-right: 15px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+/* Footer Ends */
+
+/* Typing Animation */
+
+.typewriter h1 {
+  color: #ffffff;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .15em solid rgba(255, 255, 255, 0.5); 
+  white-space: nowrap;
+  margin: 0 auto;
+  margin-top: 45px;
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgba(255, 255, 255, 0.5) }
+}
+
+/*Drop Down Menu Sections and Sub-Sections of Them*/
+
+.dropbtn:hover {
+  color: rgb(179, 179, 179);
+  text-decoration: none;
+}
+
+.dropbtn a:hover {
+  color: rgb(179, 179, 179);
+  text-decoration: none;
+}
+
+.dropbtn {
+  background-color: #131316;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 10px 20px 0px #41414b2f;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: transparent;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: transparent;}
+
+.site-navigation .nav li .sub-nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.site-navigation .nav li:hover .sub-nav li:hover {
+  background-color: transparent;
+}
+
+.dropdown-content .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: 0px 10px 20px 0px #41414b2f;
+  z-index: 1;
+}
+
+.dropdown-content .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content .dropdown-content a:hover {background-color: transparent;}
+
+.dropdown-content:hover .dropdown-content {display: block;}
+
+.dropdown-content:hover .dropbtn {background-color: transparent;}
+
+.dropdown-content .dropdown-content {
+  margin-left: 150px;
+}
+
+.dropdown-content:hover .dropdown-content {
+  display: block;
+}
+
+.solar-bg-img {
+  margin-top: 95px;
+  margin-right: 500px;
+  position: absolute;
+  top: 52%;
+  right: 0;
+  left: auto;
+  transform: translate(30%, -50%);
+  width: 90%;
+  height: 90%;
+  z-index: -1;
+}
+
+.lunar-bg-img {
+  margin-top: 95px;
+  margin-right: 500px;
+  position: absolute;
+  top: 52%;
+  right: 0;
+  left: auto;
+  transform: translate(30%, -50%);
+  width: 92%;
+  height: 92%;
+  z-index: -1;
+}
+
+.solar-types img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.lunar-types img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.observation img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.dates img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/**/
+
