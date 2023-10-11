@@ -24,7 +24,7 @@ const observer = new IntersectionObserver((entries) => {
           A: "Total Solar Eclipse",
           B: "Annular Solar Eclipse",
           C: "Partial Solar Eclipse",
-          D: "Hybrid Solar Eclipse "
+          D: "Hybrid Solar Eclipse ",
 
           
          },
@@ -134,6 +134,7 @@ const observer = new IntersectionObserver((entries) => {
     function buildQuiz() {
       // we'll need a place to store the HTML output
       const output = [];
+
   
       // for each question...
       myQuestions.forEach((currentQuestion, questionNumber) => {

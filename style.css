@@ -220,7 +220,7 @@ hr {
 
 .typewriter h1 {
   color: #ffffff;
-  font-family: monospace;
+  font-family: Poppins, sans-serif;
   overflow: hidden;
   border-right: .15em solid rgba(255, 255, 255, 0.5); 
   white-space: nowrap;
@@ -393,7 +393,6 @@ hr {
   object-fit: cover;
   margin-bottom: 20px;
 }
-
 
 /* About Us*/
 
